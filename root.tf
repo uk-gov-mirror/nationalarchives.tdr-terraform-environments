@@ -89,3 +89,7 @@ module "keycloak" {
   az_count                    = 2
   region                      = local.region
 }
+
+module "cognito_oidc" {
+  source = "./modules/cognito-oidc"
+}
