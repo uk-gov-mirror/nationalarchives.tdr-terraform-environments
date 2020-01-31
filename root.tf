@@ -92,4 +92,5 @@ module "keycloak" {
 
 module "cognito_oidc" {
   source = "./modules/cognito-oidc"
+  environment = local.environment
 }
